@@ -1,0 +1,28 @@
+diff --git a/tsfile/java/tsfile/src/main/java/org/apache/tsfile/read/reader/page/ValuePageReader.java b/tsfile/java/tsfile/src/main/java/org/apache/tsfile/read/reader/page/ValuePageReader.java
+--- a/tsfile/java/tsfile/src/main/java/org/apache/tsfile/read/reader/page/ValuePageReader.java
++++ b/tsfile/java/tsfile/src/main/java/org/apache/tsfile/read/reader/page/ValuePageReader.java
+@@ -61,6 +61,8 @@
+ public class ValuePageReader {
+   private static final Logger LOGGER = LoggerFactory.getLogger(ValuePageReader.class);
+   private static final int MASK = 0x80;
++  private static final boolean NO_LATE_DECOMPRESSION =
++      Boolean.getBoolean("compressiotdb.nolate");
+ 
+   private final PageHeader pageHeader;
+ 
+@@ -108,6 +110,15 @@
+     this.pageHeader = pageHeader;
+     this.uncompressor = uncompressor;
+     this.compressedValueBuffer = pageData;
++    // Fig. 9 "CompressIoTDB-NoLate" variant: decompress the general-purpose (e.g. LZ4) layer
++    // eagerly when the page reader is constructed instead of on first access.
++    if (NO_LATE_DECOMPRESSION) {
++      try {
++        checkAndUncompressPageData();
++      } catch (IOException e) {
++        throw new java.io.UncheckedIOException(e);
++      }
++    }
+   }
+ 
+   private void checkAndUncompressPageData() throws IOException {

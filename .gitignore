@@ -1,0 +1,6 @@
+# Generated datasets (~10 GB) and jar backups: regenerate with ./gen_datasets.sh
+work/
+*.bak
+*.fig9bak
+.DS_Store
+__pycache__/

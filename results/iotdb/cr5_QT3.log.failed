@@ -1,0 +1,246 @@
+Using configuration file: /Users/hs/Documents/Development/data-management/fig9/configs/cr5_QT3.properties
+Using default memory configuration to startup.
+2026-11-20 01:18:46,570 INFO  cn.edu.tsinghua.iot.benchmark.App:41 - Initial Heap Size: 136314880bytes, Max Heap Size: 2147483648bytes. 
+2026-11-20 01:18:46,687 INFO  cn.edu.tsinghua.iot.benchmark.conf.Config:528 - Init SensorTypes: BOOLEAN:INT32:INT64:FLOAT:DOUBLE:TEXT=0:0:0:1:0:0 
+2026-11-20 01:18:47,873 INFO  cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper:537 - Registering schema... 
+2026-11-20 01:18:47,874 INFO  cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper:537 - Registering schema... 
+2026-11-20 01:18:48,886 INFO  cn.edu.tsinghua.iot.benchmark.mode.BaseMode:157 - Registering schema successful! 
+2026-11-20 01:18:48,889 INFO  cn.edu.tsinghua.iot.benchmark.workload.GenerateDataWorkLoad:143 - Start Generating WorkLoad 
+2026-11-20 01:18:48,889 INFO  cn.edu.tsinghua.iot.benchmark.workload.GenerateDataWorkLoad:196 - According to OPERATION_PROPORTION, there is no need to write 
+2026-11-20 01:18:48,889 INFO  cn.edu.tsinghua.iot.benchmark.workload.GenerateDataWorkLoad:198 - Finish Generating WorkLoad 
+2026-11-20 01:18:49,903 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-1 5.00% workload is done. 
+2026-11-20 01:18:49,903 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-2 5.00% workload is done. 
+2026-11-20 01:20:20,249 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-2 10.00% workload is done. 
+2026-11-20 01:20:20,249 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-1 10.00% workload is done. 
+2026-11-20 01:20:31,877 ERROR cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase:230 - exception occurred when execute query=SELECT s_2/20.0, s_4/20.0, s_1/20.0, s_3/20.0, s_0/20.0 FROM root.cr5.g_0.d_0 WHERE  root.cr5.g_0.d_0.s_2 > 7000 AND root.cr5.g_0.d_0.s_4 > 7000 AND root.cr5.g_0.d_0.s_1 > 7000 AND root.cr5.g_0.d_0.s_3 > 7000 AND root.cr5.g_0.d_0.s_0 > 7000 
+org.apache.iotdb.rpc.StatementExecutionException: 301: queue has been destroyed
+	at org.apache.iotdb.rpc.RpcUtils.verifySuccess(RpcUtils.java:87)
+	at org.apache.iotdb.rpc.IoTDBRpcDataSet.fetchResults(IoTDBRpcDataSet.java:314)
+	at org.apache.iotdb.rpc.IoTDBRpcDataSet.next(IoTDBRpcDataSet.java:294)
+	at org.apache.iotdb.isession.SessionDataSet$DataIterator.next(SessionDataSet.java:252)
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase.lambda$executeQueryAndGetStatus$2(IoTDBSessionBase.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-11-20 01:20:31,877 ERROR cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase:230 - exception occurred when execute query=SELECT s_4/20.0, s_0/20.0, s_1/20.0, s_3/20.0, s_2/20.0 FROM root.cr5.g_0.d_0 WHERE  root.cr5.g_0.d_0.s_4 > 7000 AND root.cr5.g_0.d_0.s_0 > 7000 AND root.cr5.g_0.d_0.s_1 > 7000 AND root.cr5.g_0.d_0.s_3 > 7000 AND root.cr5.g_0.d_0.s_2 > 7000 
+org.apache.iotdb.rpc.StatementExecutionException: 301: queue has been destroyed
+	at org.apache.iotdb.rpc.RpcUtils.verifySuccess(RpcUtils.java:87)
+	at org.apache.iotdb.rpc.IoTDBRpcDataSet.fetchResults(IoTDBRpcDataSet.java:314)
+	at org.apache.iotdb.rpc.IoTDBRpcDataSet.next(IoTDBRpcDataSet.java:294)
+	at org.apache.iotdb.isession.SessionDataSet$DataIterator.next(SessionDataSet.java:252)
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase.lambda$executeQueryAndGetStatus$2(IoTDBSessionBase.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-11-20 01:20:32,038 ERROR cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper:743 - Execution fail: SELECT s_4/20.0, s_0/20.0, s_1/20.0, s_3/20.0, s_2/20.0 FROM root.cr5.g_0.d_0 WHERE  root.cr5.g_0.d_0.s_4 > 7000 AND root.cr5.g_0.d_0.s_0 > 7000 AND root.cr5.g_0.d_0.s_1 > 7000 AND root.cr5.g_0.d_0.s_3 > 7000 AND root.cr5.g_0.d_0.s_2 > 7000 
+java.lang.Exception: Failed to execute.
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase.executeQueryAndGetStatus(IoTDBSessionBase.java:254)
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDB.expValueQuery(IoTDB.java:590)
+	at cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper.expValueQuery(DBWrapper.java:283)
+	at cn.edu.tsinghua.iot.benchmark.client.generate.GenerateDataMixClient.doTest(GenerateDataMixClient.java:99)
+	at cn.edu.tsinghua.iot.benchmark.client.DataClient.run(DataClient.java:146)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-11-20 01:20:32,040 ERROR cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper:743 - Execution fail: SELECT s_2/20.0, s_4/20.0, s_1/20.0, s_3/20.0, s_0/20.0 FROM root.cr5.g_0.d_0 WHERE  root.cr5.g_0.d_0.s_2 > 7000 AND root.cr5.g_0.d_0.s_4 > 7000 AND root.cr5.g_0.d_0.s_1 > 7000 AND root.cr5.g_0.d_0.s_3 > 7000 AND root.cr5.g_0.d_0.s_0 > 7000 
+java.lang.Exception: Failed to execute.
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase.executeQueryAndGetStatus(IoTDBSessionBase.java:254)
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDB.expValueQuery(IoTDB.java:590)
+	at cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper.expValueQuery(DBWrapper.java:283)
+	at cn.edu.tsinghua.iot.benchmark.client.generate.GenerateDataMixClient.doTest(GenerateDataMixClient.java:99)
+	at cn.edu.tsinghua.iot.benchmark.client.DataClient.run(DataClient.java:146)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-11-20 01:21:49,917 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-1 25.00% workload is done. 
+2026-11-20 01:21:49,917 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-2 25.00% workload is done. 
+2026-11-20 01:23:20,114 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-2 35.00% workload is done. 
+2026-11-20 01:23:20,114 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-1 35.00% workload is done. 
+2026-11-20 01:24:49,921 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-2 50.00% workload is done. 
+2026-11-20 01:24:49,921 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-1 50.00% workload is done. 
+2026-11-20 01:26:20,800 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-2 70.00% workload is done. 
+2026-11-20 01:26:20,800 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-1 70.00% workload is done. 
+2026-11-20 01:26:33,320 ERROR cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase:230 - exception occurred when execute query=SELECT s_1/20.0, s_0/20.0, s_2/20.0, s_4/20.0, s_3/20.0 FROM root.cr5.g_0.d_0 WHERE  root.cr5.g_0.d_0.s_1 > 7000 AND root.cr5.g_0.d_0.s_0 > 7000 AND root.cr5.g_0.d_0.s_2 > 7000 AND root.cr5.g_0.d_0.s_4 > 7000 AND root.cr5.g_0.d_0.s_3 > 7000 
+org.apache.iotdb.rpc.StatementExecutionException: 301: queue has been destroyed
+	at org.apache.iotdb.rpc.RpcUtils.verifySuccess(RpcUtils.java:87)
+	at org.apache.iotdb.rpc.IoTDBRpcDataSet.fetchResults(IoTDBRpcDataSet.java:314)
+	at org.apache.iotdb.rpc.IoTDBRpcDataSet.next(IoTDBRpcDataSet.java:294)
+	at org.apache.iotdb.isession.SessionDataSet$DataIterator.next(SessionDataSet.java:252)
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase.lambda$executeQueryAndGetStatus$2(IoTDBSessionBase.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-11-20 01:26:33,320 ERROR cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase:230 - exception occurred when execute query=SELECT s_4/20.0, s_1/20.0, s_0/20.0, s_3/20.0, s_2/20.0 FROM root.cr5.g_0.d_0 WHERE  root.cr5.g_0.d_0.s_4 > 7000 AND root.cr5.g_0.d_0.s_1 > 7000 AND root.cr5.g_0.d_0.s_0 > 7000 AND root.cr5.g_0.d_0.s_3 > 7000 AND root.cr5.g_0.d_0.s_2 > 7000 
+org.apache.iotdb.rpc.StatementExecutionException: 301: queue has been destroyed
+	at org.apache.iotdb.rpc.RpcUtils.verifySuccess(RpcUtils.java:87)
+	at org.apache.iotdb.rpc.IoTDBRpcDataSet.fetchResults(IoTDBRpcDataSet.java:314)
+	at org.apache.iotdb.rpc.IoTDBRpcDataSet.next(IoTDBRpcDataSet.java:294)
+	at org.apache.iotdb.isession.SessionDataSet$DataIterator.next(SessionDataSet.java:252)
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase.lambda$executeQueryAndGetStatus$2(IoTDBSessionBase.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-11-20 01:26:33,388 ERROR cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper:743 - Execution fail: SELECT s_4/20.0, s_1/20.0, s_0/20.0, s_3/20.0, s_2/20.0 FROM root.cr5.g_0.d_0 WHERE  root.cr5.g_0.d_0.s_4 > 7000 AND root.cr5.g_0.d_0.s_1 > 7000 AND root.cr5.g_0.d_0.s_0 > 7000 AND root.cr5.g_0.d_0.s_3 > 7000 AND root.cr5.g_0.d_0.s_2 > 7000 
+java.lang.Exception: Failed to execute.
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase.executeQueryAndGetStatus(IoTDBSessionBase.java:254)
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDB.expValueQuery(IoTDB.java:590)
+	at cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper.expValueQuery(DBWrapper.java:283)
+	at cn.edu.tsinghua.iot.benchmark.client.generate.GenerateDataMixClient.doTest(GenerateDataMixClient.java:99)
+	at cn.edu.tsinghua.iot.benchmark.client.DataClient.run(DataClient.java:146)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-11-20 01:26:33,389 ERROR cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper:743 - Execution fail: SELECT s_1/20.0, s_0/20.0, s_2/20.0, s_4/20.0, s_3/20.0 FROM root.cr5.g_0.d_0 WHERE  root.cr5.g_0.d_0.s_1 > 7000 AND root.cr5.g_0.d_0.s_0 > 7000 AND root.cr5.g_0.d_0.s_2 > 7000 AND root.cr5.g_0.d_0.s_4 > 7000 AND root.cr5.g_0.d_0.s_3 > 7000 
+java.lang.Exception: Failed to execute.
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase.executeQueryAndGetStatus(IoTDBSessionBase.java:254)
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDB.expValueQuery(IoTDB.java:590)
+	at cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper.expValueQuery(DBWrapper.java:283)
+	at cn.edu.tsinghua.iot.benchmark.client.generate.GenerateDataMixClient.doTest(GenerateDataMixClient.java:99)
+	at cn.edu.tsinghua.iot.benchmark.client.DataClient.run(DataClient.java:146)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-11-20 01:27:34,711 ERROR cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase:230 - exception occurred when execute query=SELECT s_0/20.0, s_4/20.0, s_2/20.0, s_1/20.0, s_3/20.0 FROM root.cr5.g_0.d_0 WHERE  root.cr5.g_0.d_0.s_0 > 7000 AND root.cr5.g_0.d_0.s_4 > 7000 AND root.cr5.g_0.d_0.s_2 > 7000 AND root.cr5.g_0.d_0.s_1 > 7000 AND root.cr5.g_0.d_0.s_3 > 7000 
+org.apache.iotdb.rpc.StatementExecutionException: 301: queue has been destroyed
+	at org.apache.iotdb.rpc.RpcUtils.verifySuccess(RpcUtils.java:87)
+	at org.apache.iotdb.rpc.IoTDBRpcDataSet.fetchResults(IoTDBRpcDataSet.java:314)
+	at org.apache.iotdb.rpc.IoTDBRpcDataSet.next(IoTDBRpcDataSet.java:294)
+	at org.apache.iotdb.isession.SessionDataSet$DataIterator.next(SessionDataSet.java:252)
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase.lambda$executeQueryAndGetStatus$2(IoTDBSessionBase.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-11-20 01:27:34,710 ERROR cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase:230 - exception occurred when execute query=SELECT s_0/20.0, s_1/20.0, s_3/20.0, s_2/20.0, s_4/20.0 FROM root.cr5.g_0.d_0 WHERE  root.cr5.g_0.d_0.s_0 > 7000 AND root.cr5.g_0.d_0.s_1 > 7000 AND root.cr5.g_0.d_0.s_3 > 7000 AND root.cr5.g_0.d_0.s_2 > 7000 AND root.cr5.g_0.d_0.s_4 > 7000 
+org.apache.iotdb.rpc.StatementExecutionException: 301: queue has been destroyed
+	at org.apache.iotdb.rpc.RpcUtils.verifySuccess(RpcUtils.java:87)
+	at org.apache.iotdb.rpc.IoTDBRpcDataSet.fetchResults(IoTDBRpcDataSet.java:314)
+	at org.apache.iotdb.rpc.IoTDBRpcDataSet.next(IoTDBRpcDataSet.java:294)
+	at org.apache.iotdb.isession.SessionDataSet$DataIterator.next(SessionDataSet.java:252)
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase.lambda$executeQueryAndGetStatus$2(IoTDBSessionBase.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-11-20 01:27:34,798 ERROR cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper:743 - Execution fail: SELECT s_0/20.0, s_4/20.0, s_2/20.0, s_1/20.0, s_3/20.0 FROM root.cr5.g_0.d_0 WHERE  root.cr5.g_0.d_0.s_0 > 7000 AND root.cr5.g_0.d_0.s_4 > 7000 AND root.cr5.g_0.d_0.s_2 > 7000 AND root.cr5.g_0.d_0.s_1 > 7000 AND root.cr5.g_0.d_0.s_3 > 7000 
+java.lang.Exception: Failed to execute.
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase.executeQueryAndGetStatus(IoTDBSessionBase.java:254)
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDB.expValueQuery(IoTDB.java:590)
+	at cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper.expValueQuery(DBWrapper.java:283)
+	at cn.edu.tsinghua.iot.benchmark.client.generate.GenerateDataMixClient.doTest(GenerateDataMixClient.java:99)
+	at cn.edu.tsinghua.iot.benchmark.client.DataClient.run(DataClient.java:146)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-11-20 01:27:34,797 ERROR cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper:743 - Execution fail: SELECT s_0/20.0, s_1/20.0, s_3/20.0, s_2/20.0, s_4/20.0 FROM root.cr5.g_0.d_0 WHERE  root.cr5.g_0.d_0.s_0 > 7000 AND root.cr5.g_0.d_0.s_1 > 7000 AND root.cr5.g_0.d_0.s_3 > 7000 AND root.cr5.g_0.d_0.s_2 > 7000 AND root.cr5.g_0.d_0.s_4 > 7000 
+java.lang.Exception: Failed to execute.
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDBSessionBase.executeQueryAndGetStatus(IoTDBSessionBase.java:254)
+	at cn.edu.tsinghua.iot.benchmark.iotdb130.IoTDB.expValueQuery(IoTDB.java:590)
+	at cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper.expValueQuery(DBWrapper.java:283)
+	at cn.edu.tsinghua.iot.benchmark.client.generate.GenerateDataMixClient.doTest(GenerateDataMixClient.java:99)
+	at cn.edu.tsinghua.iot.benchmark.client.DataClient.run(DataClient.java:146)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-11-20 01:27:50,031 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-1 80.00% workload is done. 
+2026-11-20 01:27:50,031 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-2 80.00% workload is done. 
+2026-11-20 01:29:19,944 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-1 95.00% workload is done. 
+2026-11-20 01:29:19,944 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-2 95.00% workload is done. 
+2026-11-20 01:30:12,282 INFO  cn.edu.tsinghua.iot.benchmark.mode.BaseMode:169 - All dataClients finished. 
+----------------------Main Configurations----------------------
+########### Test Mode ###########
+BENCHMARK_WORK_MODE=testWithDefaultPath
+########### Database Connection Information ###########
+DOUBLE_WRITE=false
+DBConfig=
+  DB_SWITCH=IoTDB-130-SESSION_BY_TABLET
+  HOST=[127.0.0.1]
+########### Data Mode ###########
+GROUP_NUMBER=1
+DEVICE_NUMBER=1
+REAL_INSERT_RATE=1.0
+SENSOR_NUMBER=5
+IS_SENSOR_TS_ALIGNMENT=true
+IS_OUT_OF_ORDER=false
+OUT_OF_ORDER_RATIO=0.5
+########### Data Amount ###########
+OPERATION_PROPORTION=0:0:0:0:0:0:0:0:0:0:0:1
+CLIENT_NUMBER=2
+LOOP=20
+BATCH_SIZE_PER_WRITE=200000
+DEVICE_NUM_PER_WRITE=1
+START_TIME=2001-09-09T09:00:00+08:00
+POINT_STEP=2500000000
+OP_MIN_INTERVAL=0
+OP_MIN_INTERVAL_RANDOM=false
+INSERT_DATATYPE_PROPORTION=0:0:0:1:0:0
+ENCODINGS=RLE/TS_2DIFF/TS_2DIFF/GORILLA/GORILLA/DICTIONARY
+COMPRESSOR=LZ4
+########### Query Param ###########
+QUERY_DEVICE_NUM=1
+QUERY_SENSOR_NUM=5
+QUERY_INTERVAL=25000000000
+STEP_SIZE=1
+IS_RECENT_QUERY=false
+########### Other Param ###########
+IS_DELETE_DATA=false
+CREATE_SCHEMA=false
+BENCHMARK_CLUSTER=false
+VECTOR=true
+
+---------------------------------------------------------------
+main measurements:
+Create schema cost 0.00 second
+Test elapsed time (not include schema creation): 683.39 second
+----------------------------------------------------------Result Matrix----------------------------------------------------------
+Operation                okOperation              okPoint                  failOperation            failPoint                throughput(point/s)      
+INGESTION                0                        0                        0                        0                        0.00                     
+PRECISE_POINT            0                        0                        0                        0                        0.00                     
+TIME_RANGE               0                        0                        0                        0                        0.00                     
+VALUE_RANGE              0                        0                        0                        0                        0.00                     
+AGG_RANGE                0                        0                        0                        0                        0.00                     
+AGG_VALUE                0                        0                        0                        0                        0.00                     
+AGG_RANGE_VALUE          0                        0                        0                        0                        0.00                     
+GROUP_BY                 0                        0                        0                        0                        0.00                     
+LATEST_POINT             0                        0                        0                        0                        0.00                     
+RANGE_QUERY_DESC         0                        0                        0                        0                        0.00                     
+VALUE_RANGE_QUERY_DESC   0                        0                        0                        0                        0.00                     
+EXP_VALUE                34                       11047327090              6                        0                        16165502.92              
+---------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------Latency (ms) Matrix--------------------------------------------------------------------------
+Operation                AVG         MIN         P10         P25         MEDIAN      P75         P90         P95         P99         P999        MAX         SLOWEST_THREAD
+INGESTION                0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+PRECISE_POINT            0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+TIME_RANGE               0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+VALUE_RANGE              0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+AGG_RANGE                0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+AGG_VALUE                0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+AGG_RANGE_VALUE          0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+GROUP_BY                 0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+LATEST_POINT             0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+RANGE_QUERY_DESC         0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+VALUE_RANGE_QUERY_DESC   0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+EXP_VALUE                29121.62    10892.66    12791.15    15199.04    21458.47    39875.99    52984.33    57835.49    59096.92    59061.27    59057.31    495161.41   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------

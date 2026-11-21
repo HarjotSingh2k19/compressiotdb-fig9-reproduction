@@ -1,0 +1,85 @@
+=== [uncompressed] 2026-11-19 13:48:40 ===
+  dropping server copy of root.cr1 (frees region memory)
+  dropping server copy of root.cr3 (frees region memory)
+  dropping server copy of root.cr5 (frees region memory)
+  dropping server copy of root.cr7 (frees region memory)
+  dropping server copy of root.cr9 (frees region memory)
+  root.pl1 verified (100000000 rows)
+  root.pl3 verified (100000000 rows)
+  root.pl5 verified (100000000 rows)
+  loading pl7 from /Users/hs/Documents/Development/data-management/fig9/work/datasets/pl7 (try 1, found '0' rows)
+  root.pl7 verified (100000000 rows)
+  loading pl9 from /Users/hs/Documents/Development/data-management/fig9/work/datasets/pl9 (try 1, found 'none' rows)
+  root.pl9 verified (100000000 rows)
+  [uncompressed] rate=0.1 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl1_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        3.88                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [uncompressed] rate=0.1 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl1_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        1.73                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [uncompressed] rate=0.1 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl1_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       13005597400              0                        0                        46344622.60              
+  [uncompressed] rate=0.3 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl3_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        4.57                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [uncompressed] rate=0.3 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl3_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        1.72                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [uncompressed] rate=0.3 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl3_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12998617400              0                        0                        48058126.11              
+  [uncompressed] rate=0.5 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl5_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        4.66                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [uncompressed] rate=0.5 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl5_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        1.74                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [uncompressed] rate=0.5 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl5_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12996855400              0                        0                        50323710.03              
+  [uncompressed] rate=0.7 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl7_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        4.94                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [uncompressed] rate=0.7 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl7_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        1.94                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [uncompressed] rate=0.7 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl7_QT3.log
+  [uncompressed] rate=0.9 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl9_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        4.18                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [uncompressed] rate=0.9 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl9_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        1.51                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [uncompressed] rate=0.9 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl9_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12993922200              0                        0                        52577223.14              
+warning: no valid EXP_VALUE result in /Users/hs/Documents/Development/data-management/fig9/results/uncompressed/pl7_QT3.log
+warning: REJECTED EXP_VALUE in /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr5_QT3.log (okPoint=11047327090.0, failOperation=6): data missing or queries failed
+Authors: CompressIoTDB throughput / IoTDB throughput
+        rate 0.1 rate 0.3 rate 0.5 rate 0.7 rate 0.9
+  QT1      1.31x    1.76x    2.22x    2.76x    4.08x
+  QT2      1.09x    1.27x    1.52x    1.94x    2.56x
+  QT3      1.03x    1.15x    1.37x    1.44x    1.71x
+
+Measured: CompressIoTDB throughput / IoTDB throughput
+        rate 0.1 rate 0.3 rate 0.5 rate 0.7 rate 0.9
+  QT1      1.89x    2.51x    3.19x    3.67x    4.23x
+  QT2      1.84x    2.28x    3.66x    4.36x    4.17x
+  QT3      1.01x    1.54x        -    2.48x    2.03x
+
+wrote /Users/hs/Documents/Development/data-management/fig9/fig9_output/{fig9.svg, fig9_reference_authors.csv, fig9_measured.csv, summary.txt}

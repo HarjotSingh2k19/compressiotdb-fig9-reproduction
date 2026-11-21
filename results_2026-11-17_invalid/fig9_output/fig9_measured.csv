@@ -1,0 +1,3 @@
+system,rate,qt,op,latency_ms,ok_ops,throughput_points_per_s
+cio,0.5,QT1,AGG_RANGE,803.41,10,155586811
+nolate,0.5,QT1,AGG_RANGE,860.49,10,145266069

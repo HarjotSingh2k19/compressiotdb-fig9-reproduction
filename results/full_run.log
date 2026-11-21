@@ -1,0 +1,224 @@
+=== [iotdb] 2026-11-19 12:01:48 ===
+  root.cr1 verified (100000000 rows)
+  root.cr3 verified (100000000 rows)
+  root.cr5 verified (100000000 rows)
+  root.cr7 verified (100000000 rows)
+  root.cr9 verified (100000000 rows)
+  [iotdb] rate=0.1 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr1_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        5.45                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [iotdb] rate=0.1 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr1_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        2.22                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [iotdb] rate=0.1 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr1_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       13005596400              0                        0                        64048001.19              
+  [iotdb] rate=0.3 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr3_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        4.69                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [iotdb] rate=0.3 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr3_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        2.15                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [iotdb] rate=0.3 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr3_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12998605200              0                        0                        42857879.78              
+  [iotdb] rate=0.5 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr5_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        4.09                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [iotdb] rate=0.5 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr5_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        1.50                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [iotdb] rate=0.5 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr5_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                34                       11047327090              6                        0                        16165502.92              
+  [iotdb] rate=0.7 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr7_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        4.21                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [iotdb] rate=0.7 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr7_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        1.50                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [iotdb] rate=0.7 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr7_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12994701600              0                        0                        30429884.06              
+  [iotdb] rate=0.9 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr9_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        4.41                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [iotdb] rate=0.9 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr9_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        1.80                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [iotdb] rate=0.9 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr9_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12993922200              0                        0                        35967130.77              
+=== [uncompressed] 2026-11-19 12:50:02 ===
+  loading pl1 from /Users/hs/Documents/Development/data-management/fig9/work/datasets/pl1 (try 1, found 'none' rows)
+  root.pl1 verified (100000000 rows)
+  loading pl3 from /Users/hs/Documents/Development/data-management/fig9/work/datasets/pl3 (try 1, found 'none' rows)
+  root.pl3 verified (100000000 rows)
+  loading pl5 from /Users/hs/Documents/Development/data-management/fig9/work/datasets/pl5 (try 1, found 'none' rows)
+  root.pl5 verified (100000000 rows)
+  loading pl7 from /Users/hs/Documents/Development/data-management/fig9/work/datasets/pl7 (try 1, found 'none' rows)
+  loading pl7 from /Users/hs/Documents/Development/data-management/fig9/work/datasets/pl7 (try 2, found '0' rows)
+  loading pl7 from /Users/hs/Documents/Development/data-management/fig9/work/datasets/pl7 (try 3, found '0' rows)
+  ERROR: root.pl7 has '0' rows, expected 100000000 (see /Users/hs/Documents/Development/data-management/fig9/results/load_logs/pl7.log)
+[uncompressed] FAILED or skipped
+=== [nolate] 2026-11-19 12:51:59 ===
+  root.cr1 verified (100000000 rows)
+  root.cr3 verified (100000000 rows)
+  root.cr5 verified (100000000 rows)
+  root.cr7 verified (100000000 rows)
+  root.cr9 verified (100000000 rows)
+  [nolate] rate=0.1 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr1_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        6.64                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [nolate] rate=0.1 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr1_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        0.98                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [nolate] rate=0.1 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr1_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       13005596400              0                        0                        46514496.03              
+  [nolate] rate=0.3 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr3_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        9.19                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [nolate] rate=0.3 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr3_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        3.84                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [nolate] rate=0.3 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr3_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12998605200              0                        0                        59023679.96              
+  [nolate] rate=0.5 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr5_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        11.19                    
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [nolate] rate=0.5 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr5_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        4.91                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [nolate] rate=0.5 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr5_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12996855400              0                        0                        47614223.73              
+  [nolate] rate=0.7 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr7_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        5.33                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [nolate] rate=0.7 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr7_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        1.39                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [nolate] rate=0.7 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr7_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12994701600              0                        0                        55266524.44              
+  [nolate] rate=0.9 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr9_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        15.46                    
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [nolate] rate=0.9 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr9_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        2.22                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [nolate] rate=0.9 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/nolate/cr9_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12993922200              0                        0                        56311252.61              
+=== [cio] 2026-11-19 13:25:52 ===
+  root.cr1 verified (100000000 rows)
+  root.cr3 verified (100000000 rows)
+  root.cr5 verified (100000000 rows)
+  root.cr7 verified (100000000 rows)
+  root.cr9 verified (100000000 rows)
+  [cio] rate=0.1 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr1_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        9.82                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [cio] rate=0.1 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr1_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        4.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [cio] rate=0.1 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr1_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       13005596400              0                        0                        64489838.77              
+  [cio] rate=0.3 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr3_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        10.96                    
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [cio] rate=0.3 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr3_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        4.75                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [cio] rate=0.3 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr3_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12998605200              0                        0                        65697607.62              
+  [cio] rate=0.5 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr5_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        11.94                    
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [cio] rate=0.5 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr5_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        5.26                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [cio] rate=0.5 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr5_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12996855400              0                        0                        74978382.90              
+  [cio] rate=0.7 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr7_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        13.86                    
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [cio] rate=0.7 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr7_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        6.23                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [cio] rate=0.7 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr7_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12994701600              0                        0                        75109047.42              
+  [cio] rate=0.9 QT1 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr9_QT1.log
+      AGG_RANGE                40                       200                      0                        0                        16.31                    
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [cio] rate=0.9 QT2 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr9_QT2.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                40                       200                      0                        0                        7.10                     
+      EXP_VALUE                0                        0                        0                        0                        0.00                     
+  [cio] rate=0.9 QT3 -> /Users/hs/Documents/Development/data-management/fig9/results/cio/cr9_QT3.log
+      AGG_RANGE                0                        0                        0                        0                        0.00                     
+      AGG_VALUE                0                        0                        0                        0                        0.00                     
+      EXP_VALUE                40                       12993922200              0                        0                        72663482.88              
+warning: REJECTED EXP_VALUE in /Users/hs/Documents/Development/data-management/fig9/results/iotdb/cr5_QT3.log (okPoint=11047327090.0, failOperation=6): data missing or queries failed
+Authors: CompressIoTDB throughput / IoTDB throughput
+        rate 0.1 rate 0.3 rate 0.5 rate 0.7 rate 0.9
+  QT1      1.31x    1.76x    2.22x    2.76x    4.08x
+  QT2      1.09x    1.27x    1.52x    1.94x    2.56x
+  QT3      1.03x    1.15x    1.37x    1.44x    1.71x
+
+Measured: CompressIoTDB throughput / IoTDB throughput
+        rate 0.1 rate 0.3 rate 0.5 rate 0.7 rate 0.9
+  QT1      1.89x    2.51x    3.19x    3.67x    4.23x
+  QT2      1.84x    2.28x    3.66x    4.36x    4.17x
+  QT3      1.01x    1.54x        -    2.48x    2.03x
+
+wrote /Users/hs/Documents/Development/data-management/fig9/fig9_output/{fig9.svg, fig9_reference_authors.csv, fig9_measured.csv, summary.txt}

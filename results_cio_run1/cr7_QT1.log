@@ -1,0 +1,88 @@
+Using configuration file: /Users/hs/Documents/Development/data-management/fig9/configs/cr7_QT1.properties
+Using default memory configuration to startup.
+2026-11-20 02:39:45,953 INFO  cn.edu.tsinghua.iot.benchmark.App:41 - Initial Heap Size: 136314880bytes, Max Heap Size: 2147483648bytes. 
+2026-11-20 02:39:46,031 INFO  cn.edu.tsinghua.iot.benchmark.conf.Config:528 - Init SensorTypes: BOOLEAN:INT32:INT64:FLOAT:DOUBLE:TEXT=0:0:0:1:0:0 
+2026-11-20 02:39:47,130 INFO  cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper:537 - Registering schema... 
+2026-11-20 02:39:47,130 INFO  cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper:537 - Registering schema... 
+2026-11-20 02:39:48,136 INFO  cn.edu.tsinghua.iot.benchmark.mode.BaseMode:157 - Registering schema successful! 
+2026-11-20 02:39:48,143 INFO  cn.edu.tsinghua.iot.benchmark.workload.GenerateDataWorkLoad:143 - Start Generating WorkLoad 
+2026-11-20 02:39:48,144 INFO  cn.edu.tsinghua.iot.benchmark.workload.GenerateDataWorkLoad:196 - According to OPERATION_PROPORTION, there is no need to write 
+2026-11-20 02:39:48,144 INFO  cn.edu.tsinghua.iot.benchmark.workload.GenerateDataWorkLoad:198 - Finish Generating WorkLoad 
+2026-11-20 02:39:49,156 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-1 10.00% workload is done. 
+2026-11-20 02:39:49,156 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-2 10.00% workload is done. 
+2026-11-20 02:40:02,577 INFO  cn.edu.tsinghua.iot.benchmark.mode.BaseMode:169 - All dataClients finished. 
+----------------------Main Configurations----------------------
+########### Test Mode ###########
+BENCHMARK_WORK_MODE=testWithDefaultPath
+########### Database Connection Information ###########
+DOUBLE_WRITE=false
+DBConfig=
+  DB_SWITCH=IoTDB-130-SESSION_BY_TABLET
+  HOST=[127.0.0.1]
+########### Data Mode ###########
+GROUP_NUMBER=1
+DEVICE_NUMBER=1
+REAL_INSERT_RATE=1.0
+SENSOR_NUMBER=5
+IS_SENSOR_TS_ALIGNMENT=true
+IS_OUT_OF_ORDER=false
+OUT_OF_ORDER_RATIO=0.5
+########### Data Amount ###########
+OPERATION_PROPORTION=0:0:0:0:1:0:0:0:0:0:0:0
+CLIENT_NUMBER=2
+LOOP=20
+BATCH_SIZE_PER_WRITE=200000
+DEVICE_NUM_PER_WRITE=1
+START_TIME=2001-09-09T09:00:00+08:00
+POINT_STEP=2500000000
+OP_MIN_INTERVAL=0
+OP_MIN_INTERVAL_RANDOM=false
+INSERT_DATATYPE_PROPORTION=0:0:0:1:0:0
+ENCODINGS=RLE/TS_2DIFF/TS_2DIFF/GORILLA/GORILLA/DICTIONARY
+COMPRESSOR=LZ4
+########### Query Param ###########
+QUERY_DEVICE_NUM=1
+QUERY_SENSOR_NUM=5
+QUERY_INTERVAL=25000000000
+STEP_SIZE=1
+IS_RECENT_QUERY=false
+########### Other Param ###########
+IS_DELETE_DATA=false
+CREATE_SCHEMA=false
+BENCHMARK_CLUSTER=false
+VECTOR=true
+
+---------------------------------------------------------------
+main measurements:
+Create schema cost 0.00 second
+Test elapsed time (not include schema creation): 14.43 second
+----------------------------------------------------------Result Matrix----------------------------------------------------------
+Operation                okOperation              okPoint                  failOperation            failPoint                throughput(point/s)      
+INGESTION                0                        0                        0                        0                        0.00                     
+PRECISE_POINT            0                        0                        0                        0                        0.00                     
+TIME_RANGE               0                        0                        0                        0                        0.00                     
+VALUE_RANGE              0                        0                        0                        0                        0.00                     
+AGG_RANGE                40                       200                      0                        0                        13.86                    
+AGG_VALUE                0                        0                        0                        0                        0.00                     
+AGG_RANGE_VALUE          0                        0                        0                        0                        0.00                     
+GROUP_BY                 0                        0                        0                        0                        0.00                     
+LATEST_POINT             0                        0                        0                        0                        0.00                     
+RANGE_QUERY_DESC         0                        0                        0                        0                        0.00                     
+VALUE_RANGE_QUERY_DESC   0                        0                        0                        0                        0.00                     
+EXP_VALUE                0                        0                        0                        0                        0.00                     
+---------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------Latency (ms) Matrix--------------------------------------------------------------------------
+Operation                AVG         MIN         P10         P25         MEDIAN      P75         P90         P95         P99         P999        MAX         SLOWEST_THREAD
+INGESTION                0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+PRECISE_POINT            0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+TIME_RANGE               0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+VALUE_RANGE              0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+AGG_RANGE                618.70      580.70      596.26      598.66      607.65      625.26      640.56      682.35      720.56      720.56      720.56      12374.22    
+AGG_VALUE                0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+AGG_RANGE_VALUE          0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+GROUP_BY                 0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+LATEST_POINT             0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+RANGE_QUERY_DESC         0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+VALUE_RANGE_QUERY_DESC   0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+EXP_VALUE                0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        0.00        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------

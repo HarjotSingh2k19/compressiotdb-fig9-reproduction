@@ -1,0 +1,12 @@
+Using configuration file: /Users/hs/Documents/Development/data-management/fig9/configs/pl3_QT1.properties
+Using default memory configuration to startup.
+2026-11-17 09:28:56,991 INFO  cn.edu.tsinghua.iot.benchmark.App:41 - Initial Heap Size: 136314880bytes, Max Heap Size: 2147483648bytes. 
+2026-11-17 09:28:57,067 INFO  cn.edu.tsinghua.iot.benchmark.conf.Config:528 - Init SensorTypes: BOOLEAN:INT32:INT64:FLOAT:DOUBLE:TEXT=0:0:0:1:0:0 
+2026-11-17 09:28:58,197 INFO  cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper:537 - Registering schema... 
+2026-11-17 09:28:58,198 INFO  cn.edu.tsinghua.iot.benchmark.tsdb.DBWrapper:537 - Registering schema... 
+2026-11-17 09:28:59,206 INFO  cn.edu.tsinghua.iot.benchmark.mode.BaseMode:157 - Registering schema successful! 
+2026-11-17 09:28:59,210 INFO  cn.edu.tsinghua.iot.benchmark.workload.GenerateDataWorkLoad:143 - Start Generating WorkLoad 
+2026-11-17 09:28:59,211 INFO  cn.edu.tsinghua.iot.benchmark.workload.GenerateDataWorkLoad:196 - According to OPERATION_PROPORTION, there is no need to write 
+2026-11-17 09:28:59,211 INFO  cn.edu.tsinghua.iot.benchmark.workload.GenerateDataWorkLoad:198 - Finish Generating WorkLoad 
+2026-11-17 09:29:00,225 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-1 5.00% workload is done. 
+2026-11-17 09:29:00,225 INFO  cn.edu.tsinghua.iot.benchmark.client.DataClient:139 - DataClient-thread-2 5.00% workload is done. 
