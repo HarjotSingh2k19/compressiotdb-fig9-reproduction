@@ -15,7 +15,7 @@ FIG9_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Extended IoT-Benchmark shipped in the repo (supports EXP_VALUE).
 : "${BENCH_HOME:=$CIO_REPO/benchmark/iot-benchmark-iotdb-1.3}"
 
-# Where generated TsFiles and results go. Roughly 1.5 GB for all datasets.
+# Where generated TsFiles and results go. About 10 GB for all 10 datasets.
 : "${DATA_ROOT:=$FIG9_DIR/work/datasets}"
 : "${RESULT_DIR:=$FIG9_DIR/results}"
 

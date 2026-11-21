@@ -15,6 +15,7 @@ Each query type (QT) gets its own config so its latency is not mixed with the ot
   QT1 = AGG_RANGE  (aggregation with a time filter)
   QT2 = AGG_VALUE  (aggregation with a value filter)
   QT3 = EXP_VALUE  (expression with a value filter)
+  QT4 = AGG_RANGE_VALUE (aggregation with a time range and a value filter)
 
 Usage: make_configs.py <out_dir> [loop]
 """

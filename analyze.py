@@ -7,9 +7,10 @@ Points scanned per query (5 FLOAT sensors, 10^8 rows, 1 s timestamp spacing):
   QT1 AGG_RANGE : time window QUERY_INTERVAL = 2.5e10 ms = 2.5e7 rows  -> 1.25e8 points
   QT2 AGG_VALUE : whole series                                          -> 5e8 points
   QT3 EXP_VALUE : whole series                                          -> 5e8 points
+  QT4 AGG_RANGE_VALUE : same time window as QT1                         -> 1.25e8 points
 This was cross-checked with the authors' raw logs (res5): VALUE_RANGE returned 7.16e7 points per
 query and EXP_VALUE 2.86e8 per query, i.e. 57 % of 1.25e8 and of 5e8 (value > 7000).
-Override with --points-qt1/2/3 if your data differs. Standard library only; matplotlib is used for
+Override with --points-qt1/2/3/4 if your data differs. Standard library only; matplotlib is used for
 a PNG when it is installed, an SVG is always written.
 """
 import argparse
