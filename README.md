@@ -34,6 +34,8 @@ Query types (IoT-Benchmark, the authors' extended version shipped in their repos
 The claim is reproduced for all four query types. Figure: [`fig9_output/fig9.svg`](fig9_output/fig9.svg)
 (top row: authors' numbers from their `statics.csv`; bottom row: this run).
 
+![Fig. 9: authors (top) vs this run (bottom)](fig9_output/fig9.svg)
+
 CompressIoTDB throughput / IoTDB throughput, **this run**:
 
 | Query | 0.1 | 0.3 | 0.5 | 0.7 | 0.9 |
@@ -146,7 +148,8 @@ Requirements: macOS or Linux, JDK 17, Maven, Python 3, about 30 GB free disk.
 ```bash
 # 1. Authors' code next to this folder
 git clone https://github.com/yuxin370/CompressIoTDB
-export CIO_REPO=$PWD/CompressIoTDB          # config.sh reads this
+git clone https://github.com/HarjotSingh2k19/compressiotdb-fig9-reproduction
+# config.sh finds ../CompressIoTDB by default; otherwise export CIO_REPO=/path/to/CompressIoTDB
 export JAVA_HOME=$(/usr/libexec/java_home -v 17)   # macOS; on Linux point to a JDK 17
 
 # 2. NoLate switch (off unless -Dcompressiotdb.nolate=true is set), then build tsfile and IoTDB

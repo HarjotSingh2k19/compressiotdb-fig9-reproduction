@@ -3,5 +3,6 @@ Authors: CompressIoTDB throughput / IoTDB throughput
   QT1      1.31x    1.76x    2.22x    2.76x    4.08x
   QT2      1.09x    1.27x    1.52x    1.94x    2.56x
   QT3      1.03x    1.15x    1.37x    1.44x    1.71x
+  QT4      1.09x    1.26x    1.49x    1.94x    2.48x
 
-No measured logs found under /nonexistent (run ./run_fig9.sh first).
+No measured logs found under /tmp/empty_results (run ./run_fig9.sh first).

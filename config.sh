@@ -2,8 +2,9 @@
 # e.g.  CIO_REPO=/some/path ./run_fig9.sh
 FIG9_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# CompressIoTDB checkout (the path reported for the author's Mac).
-: "${CIO_REPO:=/Users/hs/Documents/Development/data-management/CompressIoTDB}"
+# CompressIoTDB checkout.
+# Default: a CompressIoTDB clone next to this folder (../CompressIoTDB).
+: "${CIO_REPO:=$(cd "$FIG9_DIR/.." && pwd)/CompressIoTDB}"
 
 # Built CompressIoTDB distribution (directory that contains sbin/start-standalone.sh).
 # Auto-detected below if left empty.
